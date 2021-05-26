@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    
+    
+}
+
+body{
+    
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background:#87ff65 ;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    
+}
+.logo{
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;text-shadow: 0 0 5px red;
+}
+header nav{
+    float: right;
+}
+header.scrolled{
+    background-color: #ACEB98;
+    opacity: 0.6;
+}
+header nav .active{
+    left: 0;
+
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+
+}
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    background-color: #ACEB98;
+    display: none;
+}
+header nav ul li.sub-menu::before{
+    content: "\f0d7";
+    font-family: fontAwesome;
+    line-height: 50px;
+    color: #5a5a66;
+    right: 5px;
+    position: absolute;
+
+
+}
+header nav ul li:hover ul{
+    display: block;
+}
+header nav ul li ul li{
+    display: block;
+    width: 200px;
+}
+
+header nav ul li a{
+    height: 50px;
+    color: #000;
+    font-weight: bolder;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s ease;
+}
+header nav ul li a:hover,header nav ul li a.active{
+    color: #fff;
+    background-color: #2196f3;
+}
+.tgl{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    line-height: 50px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+
+}
+.tgl i:hover{
+    background-color: #2196f3;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.hero{
+    margin-top: 350px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px red;
+    
+    
+}
+.hero button{
+    width: 150px;
+    padding: 20px 10px;
+    background-color:#87ff65;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+  
+}
+.hero button:hover{
+    
+    box-shadow: 2px 2px 10px 3px red;
+}
+
+.about{
+    background-color: #87ff65;
+    
+    margin: -10px;
+    padding: 30px 30px;
+    
+}
+.abb{
+    display: flex;
+    flex-direction: row;
+}
+.abt{
+    background-color: #ACEB98;
+   
+    
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 40%;
+    height: 400px;
+    padding: 10px 10px;
+    position: relative;
+    transition: 0.5s;
+    
+    
+
+}
+.abt:hover{
+    box-shadow:         2px 2px 10px 3px #000;
+    background-color: #fff;
+}
+.abt img{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.abt .cnt{
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.thunder{
+    
+    text-align: center;
+    height: 300px;
+}
+.thunder ul{
+    padding-top: 150px;
+    
+    
+    list-style: none;
+}
+.thunder ul li{
+    display: inline-block;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif;
+    padding: 0 5px;
+    animation: thunder 1s linear infinite;
+}
+@keyframes thunder {
+    0%{
+        color: #576574;
+        text-shadow: none;
+    }
+    90%{
+        color: #576574;
+        text-shadow: none;
+    }
+    100%{
+        color: #f1c40f;
+        text-shadow: 0 0 1rem #d35400, 0 0 7rem #d35400 ;
+    }
+    
+}
+.thunder ul li:nth-child(1){
+    animation-delay: 0s;
+}
+.thunder ul li:nth-child(2){
+    animation-delay: 0.1s;
+}
+.thunder ul li:nth-child(3){
+    animation-delay: 0.2s;
+}
+.thunder ul li:nth-child(4){
+    animation-delay: 0.3s;
+}
+.thunder ul li:nth-child(5){
+    animation-delay: 0.4s;
+}
+.thunder ul li:nth-child(6){
+    animation-delay: 0.5s;
+}
+.thunder ul li:nth-child(7){
+    animation-delay: 0.6s;
+}
+.thunder ul li:nth-child(8){
+    animation-delay: 0.7s;
+}
+.thunder ul li:nth-child(9){
+    animation-delay: 0.8s;
+}
+.thunder ul li:nth-child(10){
+    animation-delay: 0.9s;
+}
+
+
+.why{
+    background-color: #87ff65;
+    padding: 20px 30px;
+    
+}
+.whyy{
+    width: 80%;
+    border-radius: 10px;
+    padding: 10% 10%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+.products{
+    background-color: #87ff65;
+    padding: 30px 30px;
+
+}
+.main{
+    
+    height: 8vh;
+    background-color: beige;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+
+
+.parent{
+
+    
+    height:auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
+    
+    
+}
+.child{
+   
+    height: 300px;
+    background-color: white;
+    margin: 10px 30px;
+    text-align: center;
+    box-shadow: 5px 2px 20px 1px white;
+    flex: 1 1 150px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px; 
+    padding: 10px 10px; 
+    top: 10px;
+     bottom: 10px;
+     right: 10px;
+     left: 10px     
+    
+}
+.child:hover  img{
+    height: 80%;
+    box-shadow: 0px 0px 2px 1px black;
+
+}
+
+img{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    bottom: 1%;
+    height: 98%;
+    object-fit: cover;
+    transition: 0.5S ease;
+    z-index: 5;
+    border-radius: 10px;
+    
+}
+h2{
+    z-index: 1;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    bottom: 5px;
+    
+    
+}
+
+.contact{
+    background: linear-gradient(rgba(178, 238, 138,0.2),rgba(178, 238, 138,0.2));
+    padding: 50px 10px;
+    margin-bottom: -78px;
+
+}
+.ct{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    padding: 30px 0px;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 40px;
+    box-shadow:         1px 1px 3px 1px #fff;
+
+}
+.ct input{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    
+    
+}
+.ct button{
+    margin-top: 10px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #5a5a66;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.ct button:hover{
+    box-shadow:         1px 1px 3px 1px #fff;
+}
+
+@media (max-width:991px){
+
+    header{
+        padding: 0 20px;
+    }
+    .tgl{
+        display: block;
+        
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color:#ACEB98 ;
+        top: 50px;
+        left:-100%;
+        transition: 0.5s ease;
+        
+        
+    }
+    header nav ul{
+         display: block;
+         text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    header nav ul li ul{
+        position: relative;
+        background:#a4c2a8 ;
+    }
+    header nav ul li ul li{
+        width: 100%;
+    }
+
+}
+@media (max-width:600px){
+    .abb{
+        display: flex;
+        flex-direction: column;
+    }
+    .abt{
+        width: 80%;
+    }
+    .hero{
+        font-size: 15px;
+    }
+    .hero h1{
+        font-size: 18px;
+    }
+    .tgl{
+        margin-right: 30px;
+    }
+    .hero button{
+        width: 150px;
+        height: 30px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: x-small;
+    }
+    
+}
+@media (max-width:500px){
+    .hero{
+        font-size: 8px;
+    }
+    .thunder ul{
+        
+    }
+    .thunder ul li{
+        
+        font-size: 30px;
+        
+    }
+}
+
+    
